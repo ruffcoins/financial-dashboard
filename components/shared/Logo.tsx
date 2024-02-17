@@ -1,18 +1,23 @@
-import { routes } from "@/constants/routes";
+import { useSidebar } from "@/context/SidebarProvider";
 import { FaceSmileIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 
 const Logo = () => {
+  const { sidebarOpen, toggleSidebar } = useSidebar();
+
   return (
-    <Link
-      href={routes.DASHBOARD}
-      className="text-primary-900 flex items-center space-x-2 mx-8"
+    <div
+      onClick={toggleSidebar}
+      className={` ${
+        sidebarOpen ? "" : "justify-center"
+      } text-primary-900 flex items-center space-x-2 cursor-pointer`}
     >
       <FaceSmileIcon className="w-8 h-8" />
-      <p className="tracking-wider text-4xl">
-        Smile<span className="font-medium">Pay</span>
-      </p>
-    </Link>
+      {sidebarOpen && (
+        <p className="tracking-wider text-4xl">
+          Smile<span className="font-medium">Pay</span>
+        </p>
+      )}
+    </div>
   );
 };
 export default Logo;

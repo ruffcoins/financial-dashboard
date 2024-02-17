@@ -22,7 +22,7 @@ const Notification = () => {
       </div>
 
       {open && (
-        <div className="absolute top-10 right-0 rounded-md p-4 w-72 shadow-sm bg-white list-none">
+        <div className="absolute top-10 right-0 rounded-md p-4 lg:w-72 w-64 shadow-sm bg-white list-none">
           <p className="text-xl text-primary-900 mb-4">Notifications</p>
           {transactionsNotification.map((transaction) => (
             <li
