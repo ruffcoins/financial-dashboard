@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ReportBug from "../shared/ReportBug";
+import ReportBug from "../dashboard/ReportBug";
 import {
   sidebarPrimaryMenu,
   sidebarSecondaryMenu,
@@ -29,7 +29,7 @@ const Sidebar = () => {
     <aside
       className={`${
         sidebarOpen ? "block" : "hidden lg:w-24"
-      } border fixed top-0 left-0 bottom-0 lg:block lg:w-72 bg-white h-screen overflow-hidden py-8 space-y-8 shadow-sm flex flex-col justify-between`}
+      } border fixed top-0 left-0 bottom-0 lg:block  bg-white h-screen overflow-hidden py-8 space-y-8 shadow-sm flex flex-col justify-between`}
     >
       <div className="pt-2">
         <div className="capitalize flex flex-col mt-10">
@@ -85,7 +85,7 @@ const Sidebar = () => {
                   : "text-gray-500"
               } ${
                 sidebarOpen ? "px-8" : "justify-center"
-              } py-4 flex items-center`}
+              } py-4 flex items-center hover:bg-primary-100`}
             >
               {item.href === routes.HELP ? (
                 <ChatBubbleLeftRightIcon
