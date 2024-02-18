@@ -1,4 +1,6 @@
+import ComingSoon from "@/components/shared/ComingSoon";
+
 const Planning = () => {
-  return <div>Planning</div>;
+  return <ComingSoon />;
 };
 export default Planning;

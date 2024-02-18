@@ -1,4 +1,6 @@
+import ComingSoon from "@/components/shared/ComingSoon";
+
 const Help = () => {
-  return <div>Help</div>;
+  return <ComingSoon />;
 };
 export default Help;

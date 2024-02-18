@@ -15,6 +15,8 @@ const Notification = () => {
   };
 
   return (
+    // TODO: BUGFIX: Dropdown doesn't work and it's the same for the user dropdown
+
     <div className="relative cursor-pointer">
       <div className="p-2 bg-zinc-100 rounded-full relative" onClick={toggle}>
         <div className="w-2 h-2 rounded-full bg-red-500 absolute right-2 top-0"></div>

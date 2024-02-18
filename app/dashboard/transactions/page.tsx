@@ -1,4 +1,6 @@
+import ComingSoon from "@/components/shared/ComingSoon";
+
 const Transactions = () => {
-  return <div>Transactions</div>;
+  return <ComingSoon />;
 };
 export default Transactions;
