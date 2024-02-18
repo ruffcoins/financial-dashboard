@@ -14,7 +14,7 @@ const DesktopNavbar = () => {
 
   return (
     <>
-      <div className="border sticky top-0 z-10 bg-white h-20 flex items-center justify-between lg:px-8 px-4 shadow-sm w-full">
+      <div className="border sticky top-0 z-30 bg-white h-20 flex items-center justify-between lg:px-8 px-4 shadow-sm w-full overflow-hidden">
         <div className="flex items-center">
           <div className="flex items-center w-6 h-6 mr-4 cursor-pointer">
             <Logo />
