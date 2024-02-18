@@ -76,7 +76,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="lg:col-span-2 col-span-1 bg-white rounded-md xl:px-8 px-4 mt-4">
+        <div className="lg:col-span-2 col-span-1 bg-white rounded-md xl:px-8 px-4 lg:mt-4 mt-8">
           <div className="px-4 -mt-4 w-full">
             <CreditCard
               cardNumber="1234567890123456"
