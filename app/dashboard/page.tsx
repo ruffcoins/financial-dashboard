@@ -14,13 +14,6 @@ import {
   CalendarDaysIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/solid";
-import { Metadata } from "next";
-
-const metadata: Metadata = {
-  title: "Dashboard | SmilePay",
-  description:
-    "Provides a comprehensive view of the user's financial overview including balance, income, savings, expenses, account charts, transaction summaries, and more, on the SmilePay platform.",
-};
 
 const Dashboard = () => {
   return (

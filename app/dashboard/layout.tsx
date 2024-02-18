@@ -3,6 +3,13 @@
 import Navbar from "@/components/layout/Navbar";
 import Sidebar from "@/components/layout/Sidebar";
 import SidebarProvider, { useSidebar } from "@/context/SidebarProvider";
+import type { Metadata } from "next";
+
+const metadata: Metadata = {
+  title: "Dashboard | SmilePay",
+  description:
+    "Provides a comprehensive view of the user's financial overview including balance, income, savings, expenses, account charts, transaction summaries, and more, on the SmilePay platform.",
+};
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { sidebarOpen, toggleSidebar } = useSidebar();
