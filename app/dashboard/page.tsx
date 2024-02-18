@@ -80,7 +80,7 @@ const Dashboard = () => {
           <div className="px-4 -mt-4 w-full">
             <CreditCard
               cardNumber="1234567890123456"
-              cardHolder="John Doe"
+              cardHolder="Anthony Nzube"
               expirationDate="12/24"
               cvv="123"
             />
