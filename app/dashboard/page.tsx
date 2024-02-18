@@ -22,7 +22,7 @@ const Dashboard = () => {
         <StatCard
           icon={<WalletIcon className="w-6 h-6 text-primary-900" />}
           title="Balance"
-          amount={101.47}
+          amount={835.23}
           percentageChange={20}
         />
         <StatCard

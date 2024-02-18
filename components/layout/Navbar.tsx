@@ -9,7 +9,7 @@ import { useSidebar } from "@/context/SidebarProvider";
 import Logo from "../dashboard/Logo";
 
 const DesktopNavbar = () => {
-  const { sidebarOpen, toggleSidebar } = useSidebar();
+  const { sidebarOpen } = useSidebar();
   const pathname = usePathname();
 
   return (
