@@ -16,6 +16,8 @@ const UserProfileDropDown = () => {
   };
 
   return (
+    // TODO: BUGFIX: Dropdown doesn't work and it's the same for the notfication
+
     <div className="relative cursor-pointer">
       <div
         className="flex items-center space-x-2 lg:space-x-4 text-primary-900"

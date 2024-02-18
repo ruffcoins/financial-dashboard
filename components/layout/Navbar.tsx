@@ -6,7 +6,7 @@ import Search from "../shared/Search";
 import UserProfileDropDown from "../dashboard/UserProfileDropDown";
 import Notification from "../dashboard/Notification";
 import { useSidebar } from "@/context/SidebarProvider";
-import Logo from "../dashboard/Logo";
+import Logo from "../shared/Logo";
 
 const DesktopNavbar = () => {
   const { sidebarOpen } = useSidebar();
