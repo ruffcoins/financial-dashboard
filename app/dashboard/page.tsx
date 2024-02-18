@@ -1,8 +1,8 @@
-import Chart from "@/components/dashboard/Chart";
 import PlanningOverviewCard from "@/components/dashboard/PlanningOverviewCard";
 import StatCard from "@/components/dashboard/StatCard";
 import TransactionOverviewCard from "@/components/dashboard/TransactionOverviewCard";
 import CreditCard from "@/components/shared/CreditCard";
+import LineChart from "@/components/shared/LineChart";
 import {
   WalletIcon,
   GiftIcon,
@@ -10,6 +10,9 @@ import {
   ReceiptRefundIcon,
   ArrowDownLeftIcon,
   PlusIcon,
+  RectangleStackIcon,
+  CalendarDaysIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/solid";
 
 const Dashboard = () => {
@@ -43,16 +46,38 @@ const Dashboard = () => {
       </div>
 
       <div className="grid lg:grid-cols-5 grid-cols-1 mt-4 gap-x-4">
-        <div className="lg:col-span-3 col-span-1">
-          <Chart />
+        <div className="lg:col-span-3 col-span-1 gap-y-4">
+          <div className="grid grid-cols-1 lg:gap-x-4 gap-y-4 mb-4 bg-white rounded-md xl:p-8 p-4">
+            <div className="flex justify-between items-center">
+              <p className="font-medium lg:text-2xl text-xl text-primary-900">
+                Account Balance
+              </p>
+
+              <div className="flex lg:flex-row flex-col lg:space-x-2 lg:space-y-0 space-y-2">
+                <p className="bg-primary-100 text-primary-900 text-xs px-2 flex space-x-2 items-center cursor-pointer">
+                  <CalendarDaysIcon className="w-3 h-3" />
+                  <span>Expenses</span>
+                  <ChevronDownIcon className="w-3 h-3" />
+                </p>
+                <p className="bg-primary-100 text-primary-900 text-xs px-2 flex space-x-2 items-center cursor-pointer">
+                  <RectangleStackIcon className="w-3 h-3" />
+                  <span>Monthly</span>
+                  <ChevronDownIcon className="w-3 h-3" />
+                </p>
+              </div>
+            </div>
+
+            <LineChart />
+          </div>
+
           <div className="grid lg:grid-cols-2 lg:gap-x-4 gap-y-4">
             <TransactionOverviewCard />
             <PlanningOverviewCard />
           </div>
         </div>
 
-        <div className="lg:col-span-2 col-span-1 bg-white rounded-md xl:px-8 px-4 mt-20">
-          <div className="px-4 -mt-14 w-full">
+        <div className="lg:col-span-2 col-span-1 bg-white rounded-md xl:px-8 px-4 mt-4">
+          <div className="px-4 -mt-4 w-full">
             <CreditCard
               cardNumber="1234567890123456"
               cardHolder="John Doe"
